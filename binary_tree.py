@@ -58,7 +58,7 @@ class BinarySearchTreeNode:
 
 
 #Simply put, you cannot assign anything to self. In Python, self is a reference to the object that you called the method on. It would not be None (so you don't need the if self is None check), and you cannot assign some other value to it.
-# Simply put, you cannot assign anything to self. In Python, self is a reference to the object that you called the method on. It would not be None (so you don't need the if self is None check), and you cannot assign some other value to it.  
+#However, when deleting a node from the tree, it is possible that the current node (the node which you called delete on) will be deleted. Instead of assigning values to self, we can make the delete return a node object. If the current node is not deleted, simply return itself; otherwise, return the node the will take its place (or None if the entire subtree is gone)
     def elete(self,val):
         if val<self.data:
             if self.left:
