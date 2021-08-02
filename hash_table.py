@@ -1,4 +1,5 @@
-#
+#Hashing
+
 class HashTable:
     def __init__(self):
         self.MAX=10
