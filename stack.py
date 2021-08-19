@@ -36,7 +36,6 @@ def reverse(string):
     rev=''
     while stack.size()!=0:
         rev+=stack.pop()
-
     return rev 
 
 
